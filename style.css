@@ -1,0 +1,235 @@
+:root {
+  /* Colors */
+  --primary-clr: #ffffff;
+  --secondary-clr: #1e2430;
+  --color3: #f7f7f7;
+  --color4: #bfbeb8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-image: url('background-2.avif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+body {
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  background-color: var(--color3);
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+button {
+  outline: none;
+  border: none;
+}
+
+/* Classes */
+
+/* Colors */
+.primary-clr {
+  color: var(--primary-clr);
+}
+.secondary-clr {
+  color: var(--secondary-clr);
+}
+.color3 {
+  color: var(--color3);
+}
+/* Background */
+
+.bg-primary-clr {
+  background-color: var(--primary-clr);
+}
+.bg-secondary-clr {
+  background-color: var(--secondary-clr);
+}
+.bg-color3 {
+  background-color: var(--color3);
+}
+
+/* Wrapper */
+.Wrapper {
+  --max-width: 1300px;
+  --padding: 2rem;
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
+
+/* nav */
+.nav {
+  padding-block: 1rem;
+  
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.flex img{
+  width: 50px;
+}
+.nav span a {
+  color: var(--secondary-clr);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.nav-cnt hr {
+  border: 0;
+  outline: 0;
+  height: 1px;
+  opacity: 15%;
+  background-color: var(--secondary-clr);
+}
+/* hero */
+.HeroHome {
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.hero-cnt {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 800px;
+}
+.HeroHome h1 {
+  font-size: 5vw;
+  line-height: 100px;
+  font-weight: 500;
+  max-width: 800px;
+  color: var(--secondary-clr);
+}
+.HeroHome p {
+  line-height: 27px;
+  color: var(--secondary-clr);
+  margin: auto;
+}
+.HeroHome p:nth-child(3) {
+  max-width: 500px;
+  text-align: center;
+}
+.HeroHome p:last-child {
+  max-width: 500px;
+  text-align: center;
+}
+/* more */
+.More {
+  padding-bottom: 100px;
+}
+.More h1 {
+  font-size: 4vw;
+  line-height: 120px;
+  font-weight: 500;
+  max-width: 800px;
+  color: var(--secondary-clr);
+}
+.More .row {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+}
+.More .row a {
+  color: var(--secondary-clr);
+}
+.More .row span {
+  border: 1px var(--secondary-clr) solid;
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 10px 0;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.More .grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.More .p {
+  border: 1px var(--secondary-clr) solid;
+  width: 800px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 10px 0;
+  margin-bottom: 1rem;
+  padding: 2rem;
+}
+.More h3 {
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+}
+/* video */
+.Video {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.Video button {
+  border: 1px var(--color4) solid;
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 10px 0;
+  margin-bottom: 1rem;
+  margin: auto;
+  cursor: pointer;
+  background-color: var(--color4);
+  color: var(--primary-clr);
+}
+/* overlay */
+.Overlay {
+  background-color: rgba(0, 0, 0, 0.377);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  visibility: hidden;
+  display: flex;
+  opacity: 0;
+  transition: 0.3s all;
+}
+.Overlay.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.one {
+  position: absolute;
+  left: 2rem;
+  right: 2rem;
+  top: 2rem;
+  bottom: 2rem;
+  transition: 0.3s all;
+  opacity: 0;
+}
+
+.one.active {
+  opacity: 1;
+}
