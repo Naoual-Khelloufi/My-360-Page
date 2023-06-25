@@ -246,6 +246,7 @@ button {
 /*  */
 .page {
   border: solid 1px var(--secondary-clr);
+  background-color: var(--primary-clr);
   border-radius: 30px;
   padding: 2rem;
   position: absolute;
