@@ -1,4 +1,4 @@
-const Video = document.querySelector(".Video");
+const Video = document.querySelector(".TheVideo");
 const Overlay = document.querySelector(".Overlay");
 
 Video.onclick = function () {
@@ -26,8 +26,6 @@ window.onload = () => {
 };
 
 function SwitchPage(page_id) {
-  console.log(page_id);
-
   const current_page = document.querySelector(".pages .page.active");
   current_page.classList.remove("active");
 

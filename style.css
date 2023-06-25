@@ -182,17 +182,22 @@ button {
   font-weight: 500;
 }
 /* video */
-.Video {
-  padding-top: 10rem;
-  padding-bottom: 5rem;
+.TheVideo {
+  display: flex;
+  justify-content: center;
+  margin-block: 6rem;
 }
-.Video button {
+
+.TheVideo button {
   border: 1px var(--color4) solid;
   border-radius: 30px;
-  padding: 10px 0;
+  padding: 20px 0;
   cursor: pointer;
-  background-color: var(--primary-clr);
-  color: var(--secondary-clr);
+  color: var(--primary-clr);
+  width: 230px;
+  margin: auto;
+  background-color: rgb(199, 103, 14);
+  font-weight: 600;
 }
 /* overlay */
 .Overlay {
