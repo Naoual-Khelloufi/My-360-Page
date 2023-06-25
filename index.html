@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My 360 page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=chillax@600,500,300,700,400,200&f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap"
+      rel="stylesheet"
+    />-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My 360 page</title>
@@ -9,6 +17,8 @@
       href="https://api.fontshare.com/v2/css?f[]=chillax@600,500,300,700,400,200&f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap"
       rel="stylesheet"
     />
+    <!-- AOS - Animate On Scroll Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!-- nav -->
@@ -23,7 +33,7 @@
     </div>
     <!-- hero -->
     <div class="Wrapper hero-cnt">
-      <div class="HeroHome">
+      <div class="HeroHome" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
         <h1>Création d'une vidéo 360</h1>
         <p>
           Une vidéo à 360 degrés est une vidéo immersive qui capture une scène
@@ -38,9 +48,9 @@
     </div>
     <!-- more -->
     <div class="Wrapper More">
-      <h1>Outils utilisés</h1>
+      <h1 data-aos="fade-right" data-aos-duration="600" data-aos-delay="300" >Outils utilisés</h1>
       <div class="grid">
-        <div>
+        <div data-aos="fade-right" data-aos-duration="600" data-aos-delay="300">
           <ul class="tabs">
             <li class="tab active" style="background-color: #f1eff3;">
               <a data-switcher data-tab="1">Blender</a>
@@ -53,7 +63,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div data-aos="fade-left" data-aos-duration="600" data-aos-delay="300">
           <section class="pages">
             <div class="page-cnt" style="position: relative">
               <div
@@ -130,9 +140,13 @@
       </div>
     </div>
     <!-- video -->
-    <div class="TheVideo">
+    <div class="TheVideo" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
       <button>Regarder la vidéo</button>
   </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init(5000);
+    </script>
     <script src="./script.js"></script>
   </body>
 </html>
