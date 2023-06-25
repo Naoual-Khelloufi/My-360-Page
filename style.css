@@ -17,7 +17,7 @@ body {
   width: 100%;
 }
 body {
-  background-image: url('background-2.avif');
+  background-image: url("background-2.avif");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -76,14 +76,13 @@ button {
 /* nav */
 .nav {
   padding-block: 1rem;
-  
 }
 .flex {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-.flex img{
+.flex img {
   width: 50px;
 }
 .nav span a {
@@ -100,8 +99,8 @@ button {
 }
 /* hero */
 .HeroHome {
-    padding-top: 60px;
-    padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 50px;
 }
 .hero-cnt {
   display: flex;
@@ -228,6 +227,8 @@ button {
   bottom: 2rem;
   transition: 0.3s all;
   opacity: 0;
+  display: flex;
+  gap: 2rem;
 }
 
 .one.active {
