@@ -194,7 +194,6 @@ button {
   border-radius: 30px;
   padding: 10px 0;
   margin-bottom: 1rem;
-  margin: auto;
   cursor: pointer;
   background-color: var(--primary-clr);
   color: var(--secondary-clr);
