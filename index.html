@@ -40,59 +40,82 @@
     <div class="Wrapper More">
       <h1>Outils utilisés</h1>
       <div class="grid">
-        <div class="row">
-          <span data-one="1">Blender</span>
-          <span data-one="2">Spatial Metadata Injector</span>
-          <span data-one="3">Youtube</span>
+        <div>
+          <ul class="tabs">
+            <li class="tab active">
+              <a data-switcher data-tab="1">Blender</a>
+            </li>
+            <li class="tab">
+              <a data-switcher data-tab="2">Spatial Metadata Injector</a>
+            </li>
+            <li class="tab">
+              <a data-switcher data-tab="3">Vimeo</a>
+            </li>
+          </ul>
         </div>
-        <div class="row p paragraph" style="position: relative">
-          <div class="one active" data-one="1">
-            <div>
-              <img src="./logo-Blender.png" alt="" style="width: 400px" />
+        <div>
+          <section class="pages">
+            <div class="page-cnt" style="position: relative">
+              <div
+                class="page active"
+                data-page="1"
+                style="display: flex; align-items: center; gap: 2rem"
+              >
+                <div>
+                  <img src="./logo-Blender.png" alt="" width="400px" />
+                </div>
+                <div>
+                  <h2>Blender</h2>
+                  <p style="padding-top: 0.5rem">
+                    Blender est un logiciel de création 3D polyvalent et
+                    gratuit. Il est utilisé dans de nombreux domaines tels que
+                    l'animation, le jeu vidéo, le cinéma, la modélisation
+                    architecturale et la conception de produits. Il est valable
+                    pour Windows, MacOs, et Linux.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="page"
+                data-page="2"
+                style="display: flex; align-items: center; gap: 2rem"
+              >
+                <div>
+                  <img src="./meta.png" alt="" width="600px" />
+                </div>
+                <div>
+                  <h2>Spatial Metadata Injector</h2>
+                  <p style="padding-top: 0.5rem">
+                    Spatial Media Metadata Injector est un outil logiciel qui
+                    ajoute des métadonnées spatiales à des fichiers média à 360
+                    degrés. Ces métadonnées permettent aux lecteurs et aux
+                    plateformes de comprendre comment afficher correctement le
+                    contenu et de rendre les vidéos et les images à 360 degrés
+                    visualisables de manière immersive.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="page"
+                data-page="3"
+                style="display: flex; align-items: center; gap: 2rem"
+              >
+                <div>
+                  <img src="./logo-vimeo.png" alt="" width="600px" />
+                </div>
+                <div>
+                  <h2>Vimeo</h2>
+                  <p style="padding-top: 0.5rem">
+                    Vimeo est une plateforme de partage vidéo qui offre une
+                    immense quantité de contenu dans différentes catégories.
+                    C'est un espace où les utilisateurs peuvent regarder,
+                    partager, interagir et découvrir du contenu vidéo provenant
+                    de divers créateurs à travers le monde.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div>
-              <h3>Blender</h3>
-              <p>
-                Blender est un logiciel de création 3D polyvalent et gratuit. Il
-                est utilisé dans de nombreux domaines tels que l'animation, le
-                jeu vidéo, le cinéma, la modélisation architecturale et la
-                conception de produits. Il est valable pour Windows, MacOs, et
-                Linux.
-              </p>
-            </div>
-          </div>
-          <div class="one" data-one="2">
-            <div>
-              <img src="./meta.png" alt="" style="width: 400px" />
-            </div>
-            <div>
-              <h3>Spatial Metadata Injector</h3>
-              <p>
-                Spatial Media Metadata Injector est un outil logiciel qui ajoute
-                des métadonnées spatiales à des fichiers média à 360 degrés. Ces
-                métadonnées permettent aux lecteurs et aux plateformes de
-                comprendre comment afficher correctement le contenu et de rendre
-                les vidéos et les images à 360 degrés visualisables de manière
-                immersive.
-              </p>
-            </div>
-          </div>
-          <div class="one" data-one="3">
-            <div>
-              <img src="./logo-vimeo.png" alt="" style="width: 400px" />
-            </div>
-            <div>
-              <h3>Youtube</h3>
-              <p>
-                YouTube est une plateforme de partage vidéo qui offre une
-                immense quantité de contenu dans différentes catégories. C'est
-                un espace où les utilisateurs peuvent regarder, partager,
-                interagir et découvrir du contenu vidéo provenant de divers
-                créateurs à travers le monde.
-              </p>
-            </div>
-          </div>
-        </div>
+          </section>
       </div>
       <!-- video -->
       <div class="Wrapper Video">

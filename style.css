@@ -119,6 +119,8 @@ button {
   line-height: 27px;
   color: var(--secondary-clr);
   margin: auto;
+  font-weight: 500;
+  padding-top: 1rem;
 }
 .HeroHome p:nth-child(3) {
   max-width: 500px;
@@ -181,7 +183,7 @@ button {
 }
 /* video */
 .Video {
-  padding-top: 5rem;
+  padding-top: 10rem;
   padding-bottom: 5rem;
 }
 .Video button {
@@ -194,8 +196,8 @@ button {
   margin-bottom: 1rem;
   margin: auto;
   cursor: pointer;
-  background-color: var(--color4);
-  color: var(--primary-clr);
+  background-color: var(--primary-clr);
+  color: var(--secondary-clr);
 }
 /* overlay */
 .Overlay {
@@ -233,4 +235,42 @@ button {
 
 .one.active {
   opacity: 1;
+}
+.page {
+  display: none;
+}
+.page.active {
+  display: block;
+}
+
+/*  */
+.page {
+  border: solid 1px var(--secondary-clr);
+  border-radius: 30px;
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.pages .page {
+  display: none;
+}
+
+.pages .page.active {
+  opacity: 1;
+}
+
+.tabs li {
+  margin-block: 1.2rem;
+  cursor: pointer;
+  width: 300px;
+  border: solid 1px var(--secondary-clr);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+}
+.tabs li a {
+  padding-inline: 3rem;
+  padding-block: 0.7rem;
 }
