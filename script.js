@@ -8,17 +8,31 @@ Video.onclick = function () {
 Overlay.onclick = function () {
   Overlay.classList.remove("show");
 };
+//
+window.onload = () => {
+  const tab_switchers = document.querySelectorAll("[data-switcher]");
 
-var spans = document.querySelectorAll("span[data-one]");
-var dataOneValue;
-spans.forEach(function (span) {
-  dataOneValue = span.getAttribute("data-one");
-});
+  for (let i = 0; i < tab_switchers.length; i++) {
+    const tab_switcher = tab_switchers[i];
+    const page_id = tab_switcher.dataset.tab;
 
-var divs = document.querySelectorAll("div.one");
+    tab_switcher.addEventListener("click", () => {
+      document.querySelector(".tabs .tab.active").classList.remove("active");
+      tab_switcher.parentNode.classList.add("active");
 
-// Accessing data attribute dynamically
-var dataOneValue2;
-divs.forEach(function (div) {
-  dataOneValue2 = div.getAttribute("data-one");
-});
+      SwitchPage(page_id);
+    });
+  }
+};
+
+function SwitchPage(page_id) {
+  console.log(page_id);
+
+  const current_page = document.querySelector(".pages .page.active");
+  current_page.classList.remove("active");
+
+  const next_page = document.querySelector(
+    `.pages .page[data-page="${page_id}"]`
+  );
+  next_page.classList.add("active");
+}
