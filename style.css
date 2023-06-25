@@ -188,12 +188,8 @@ button {
 }
 .Video button {
   border: 1px var(--color4) solid;
-  width: 280px;
-  display: flex;
-  justify-content: center;
   border-radius: 30px;
   padding: 10px 0;
-  margin-bottom: 1rem;
   cursor: pointer;
   background-color: var(--primary-clr);
   color: var(--secondary-clr);
